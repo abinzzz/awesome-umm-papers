@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
-"""Generate README.md and refresh citation counts from Semantic Scholar."""
+"""Generate README.md from structured paper metadata.
+
+Citation counts use the values stored in data/papers.json by default. Google
+Scholar has no official free API, so the script intentionally avoids replacing
+manual Scholar counts with Semantic Scholar/OpenAlex counts from a different
+source.
+"""
 
 from __future__ import annotations
 
 import json
-import re
+import os
 import sys
-import time
 import urllib.parse
 import urllib.request
-from difflib import SequenceMatcher
 from pathlib import Path
+from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,8 +23,11 @@ PAPERS_PATH = ROOT / "data" / "papers.json"
 README_PATH = ROOT / "README.md"
 
 
-def read_json_url(url: str) -> dict | None:
-    request = urllib.request.Request(url, headers={"User-Agent": "awesome-umm-papers/1.0"})
+def read_json_url(url: str) -> dict[str, Any] | None:
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": "awesome-umm-papers/1.0"},
+    )
 
     try:
         with urllib.request.urlopen(request, timeout=20) as response:
@@ -29,103 +37,110 @@ def read_json_url(url: str) -> dict | None:
         return None
 
 
-def fetch_semantic_scholar_count(arxiv_id: str) -> int | None:
-    if not arxiv_id:
-        return None
+def refresh_with_serpapi(papers: list[dict[str, Any]]) -> bool:
+    """Refresh Google Scholar counts when SERPAPI_KEY is configured."""
+    api_key = os.environ.get("SERPAPI_KEY")
+    if not api_key:
+        print("SERPAPI_KEY is not set; keeping checked-in citation counts.")
+        return False
 
-    paper_id = f"ARXIV:{arxiv_id}"
-    url = (
-        "https://api.semanticscholar.org/graph/v1/paper/"
-        + urllib.parse.quote(paper_id, safe=":")
-        + "?fields=citationCount"
-    )
-    payload = read_json_url(url)
-    if not payload:
-        return None
+    changed = False
+    for paper in papers:
+        query = paper["title"]
+        params = urllib.parse.urlencode(
+            {
+                "engine": "google_scholar",
+                "q": f'"{query}"',
+                "api_key": api_key,
+            }
+        )
+        payload = read_json_url(f"https://serpapi.com/search.json?{params}")
+        organic = (payload or {}).get("organic_results") or []
+        if not organic:
+            print(f"warning: no Google Scholar result for {query}", file=sys.stderr)
+            continue
 
-    count = payload.get("citationCount")
-    return count if isinstance(count, int) else None
+        inline_links = organic[0].get("inline_links") or {}
+        total = (inline_links.get("cited_by") or {}).get("total")
+        if isinstance(total, int) and paper.get("citations") != total:
+            paper["citations"] = total
+            paper["citation_source"] = "Google Scholar via SerpApi"
+            changed = True
 
-
-def normalize_title(title: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
-
-
-def fetch_openalex_count(title: str) -> int | None:
-    query = urllib.parse.urlencode({"search": title, "per-page": "5"})
-    url = f"https://api.openalex.org/works?{query}"
-    payload = read_json_url(url)
-    if not payload:
-        return None
-
-    results = payload.get("results") or []
-    wanted = normalize_title(title)
-    best: tuple[float, dict] | None = None
-    for result in results:
-        candidate = normalize_title(result.get("title") or "")
-        score = SequenceMatcher(None, wanted, candidate).ratio()
-        if best is None or score > best[0]:
-            best = (score, result)
-
-    if best is None or best[0] < 0.92:
-        print(f"warning: no reliable OpenAlex match for {title}", file=sys.stderr)
-        return None
-
-    count = best[1].get("cited_by_count")
-    return count if isinstance(count, int) else None
-
-
-def fetch_citation_count(paper: dict[str, str]) -> int | None:
-    count = fetch_semantic_scholar_count(paper.get("arxiv", ""))
-    if count is not None:
-        return count
-    return fetch_openalex_count(paper["title"])
+    if changed:
+        PAPERS_PATH.write_text(
+            json.dumps(papers, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+    return changed
 
 
 def github_stars_badge(repo: str) -> str:
     return f"![GitHub stars](https://img.shields.io/github/stars/{repo}?style=social)"
 
 
-def paper_link(arxiv_id: str) -> str:
-    if not arxiv_id:
-        return "TBA"
-    return f"[arXiv:{arxiv_id}](https://arxiv.org/abs/{arxiv_id})"
+def scholar_link(title: str) -> str:
+    query = urllib.parse.quote(f'"{title}"')
+    return f"https://scholar.google.com/scholar?q={query}"
 
 
-def render_paper(paper: dict[str, str], citation_count: int | None) -> str:
+def paper_link(paper: dict[str, Any]) -> str:
+    arxiv_id = paper.get("arxiv")
+    url = paper.get("paper_url")
+    if arxiv_id and url:
+        return f"[arXiv:{arxiv_id}]({url})"
+    if url:
+        return f"[Paper]({url})"
+    return "TBA"
+
+
+def publication_link(paper: dict[str, Any]) -> str | None:
+    note = paper.get("publication_note")
+    url = paper.get("publication_url")
+    if note and url:
+        return f"**Publication:** [{note}]({url})  "
+    if url:
+        return f"**Publication:** [{url}]({url})  "
+    return None
+
+
+def render_paper(paper: dict[str, Any]) -> str:
     repo = paper["github"]
-    citations = "N/A" if citation_count is None else str(citation_count)
+    citations = paper.get("citations")
+    citation_text = "0" if citations == 0 else str(citations or "N/A")
+    source = paper.get("citation_source", "Google Scholar")
+    checked = paper.get("citation_checked", "unchecked")
 
-    return "\n".join(
+    lines = [
+        f"**Title:** {paper['title']}  ",
+        f"**Acceptance:** {paper['acceptance']}  ",
+        f"**GitHub:** {github_stars_badge(repo)} [{repo}](https://github.com/{repo})  ",
+        f"**Citations:** [{citation_text}]({scholar_link(paper['title'])}) ({source}, checked {checked})  ",
+        f"**Paper:** {paper_link(paper)}  ",
+    ]
+
+    publication = publication_link(paper)
+    if publication:
+        lines.append(publication)
+
+    lines.extend(
         [
-            f"**Title:** {paper['title']}  ",
-            f"**Acceptance:** {paper['acceptance']}  ",
-            f"**GitHub:** {github_stars_badge(repo)} [{repo}](https://github.com/{repo})  ",
-            f"**Citations:** {citations}  ",
-            f"**Paper:** {paper_link(paper.get('arxiv', ''))}  ",
             f"**Authors:** {paper['authors']}  ",
             f"**Affiliations:** {paper['affiliations']}",
         ]
     )
+    return "\n".join(lines)
 
 
-def render_readme(papers: list[dict[str, str]]) -> str:
-    citation_counts: dict[str, int | None] = {}
-    for index, paper in enumerate(papers):
-        arxiv_id = paper.get("arxiv", "")
-        citation_counts[arxiv_id] = fetch_citation_count(paper)
-        if index != len(papers) - 1:
-            time.sleep(1)
-
-    entries = [
-        render_paper(paper, citation_counts.get(paper.get("arxiv", "")))
-        for paper in papers
-    ]
+def render_readme(papers: list[dict[str, Any]]) -> str:
+    entries = [render_paper(paper) for paper in papers]
 
     return (
         "# Awesome UMM Papers\n\n"
         "A curated list of papers on unified multimodal models, agents, and native multimodal pretraining.\n\n"
-        "Citation counts are refreshed by GitHub Actions from Semantic Scholar, with OpenAlex as a fallback. GitHub stars are live Shields.io badges.\n\n"
+        "GitHub stars are live Shields.io badges. Citation counts are Google Scholar counts checked manually; "
+        "they are not mixed with Semantic Scholar or OpenAlex counts because those sources use different coverage "
+        "and can mismatch newly released arXiv papers.\n\n"
         "## Papers\n\n"
         + "\n\n---\n\n".join(entries)
         + "\n"
@@ -134,6 +149,9 @@ def render_readme(papers: list[dict[str, str]]) -> str:
 
 def main() -> int:
     papers = json.loads(PAPERS_PATH.read_text(encoding="utf-8"))
+    if "--refresh-citations" in sys.argv:
+        refresh_with_serpapi(papers)
+        papers = json.loads(PAPERS_PATH.read_text(encoding="utf-8"))
     README_PATH.write_text(render_readme(papers), encoding="utf-8")
     return 0
 

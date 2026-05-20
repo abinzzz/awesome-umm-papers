@@ -22,10 +22,12 @@ jobs:
           python-version: "3.x"
 
       - name: Refresh README
-        run: python scripts/update_readme.py
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python scripts/update_readme.py --refresh-citations
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update citation counts"
-          file_pattern: README.md
+          file_pattern: README.md data/papers.json
