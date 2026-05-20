@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Emerging Properties in Unified Multimodal Pretraining",
+    "acceptance": "arXiv preprint, 2025",
+    "github": "ByteDance-Seed/Bagel",
+    "arxiv": "2505.14683",
+    "authors": "Chaorui Deng, Deyao Zhu, Kunchang Li, Chenhui Gou, Feng Li, Zeyu Wang, Shu Zhong, Weihao Yu, Xiaonan Nie, Ziang Song, Guang Shi, Haoqi Fan",
+    "affiliations": "ByteDance Seed, Shenzhen Institutes of Advanced Technology, Monash University, HKUST, UC Santa Cruz"
+  },
+  {
+    "title": "Emu3: Next-Token Prediction is All You Need",
+    "acceptance": "arXiv preprint, 2024",
+    "github": "baaivision/Emu3",
+    "arxiv": "2409.18869",
+    "authors": "Emu3 Team",
+    "affiliations": "BAAI"
+  },
+  {
+    "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
+    "acceptance": "arXiv preprint, 2026",
+    "github": "tulerfeng/Gen-Searcher",
+    "arxiv": "2603.28767",
+    "authors": "Kaituo Feng, Manyuan Zhang, Shawn Chen, Yunlong Lin, Kaixuan Fan, Yilei Jiang, Hongyu Li, Dian Zheng, Chenyang Wang, Xiangyu Yue",
+    "affiliations": "MMLab, CUHK, UCLA, UC Berkeley"
+  },
+  {
+    "title": "Lance: Unified Multimodal Modeling by Multi-Task Synergy",
+    "acceptance": "arXiv preprint, 2026",
+    "github": "bytedance/Lance",
+    "arxiv": "2605.18678",
+    "authors": "Fengyi Fu, Mengqi Huang, Shaojin Wu, Yunsheng Jiang, Yufei Huo, Hao Li, Yinghang Song, Fei Ding, Jianzhu Guo, Qian He, Zheren Fu, Zhendong Mao, Yongdong Zhang",
+    "affiliations": "Intelligent Creation Lab, ByteDance"
+  },
+  {
+    "title": "LongCat-Next: Lexicalizing Modalities as Discrete Tokens",
+    "acceptance": "arXiv preprint, 2026",
+    "github": "meituan-longcat/LongCat-Next",
+    "arxiv": "2603.27538",
+    "authors": "Meituan LongCat Team",
+    "affiliations": "Meituan"
+  },
+  {
+    "title": "Unify-Agent: A Unified Multimodal Agent for World-Grounded Image Synthesis",
+    "acceptance": "arXiv preprint, 2026",
+    "github": "shawn0728/Unify-Agent",
+    "arxiv": "2603.29620",
+    "authors": "Shawn Chen, Quanxin Shou, Hangting Chen, Yucheng Zhou, Kaituo Feng, Wenbo Hu, Yi-Fan Zhang, Yunlong Lin, Wenxuan Huang, Mingyang Song, Dasen Dai, Bolin Jiang, Manyuan Zhang, Shi-Xue Zhang, Zhengkai Jiang, Lucas Wang, Zhao Zhong, Yu Cheng, Nanyun Peng",
+    "affiliations": "UCLA, Tencent Hunyuan, CUHK, HKUST"
+  },
+  {
+    "title": "Watching, Reasoning and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning",
+    "acceptance": "arXiv preprint, 2026",
+    "github": "QuantaAlpha/VideoDR-Benchmark",
+    "arxiv": "2601.06943",
+    "authors": "Chengwen Liu, Xiaomin Yu, Zhuoyue Chang, Zhe Huang, Shuo Zhang, Heng Lian, Kunyi Wang, Rui Xu, Sen Hu, Jianheng Hou, Hao Peng, Chengwei Qin, Xiaobin Hu, Hong Peng, Ronghao Chen, Huacan Wang",
+    "affiliations": "LZU, HKUST(GZ), UBC, FDU, PKU, USC, NUS, UCAS, HKUST, QuantaAlpha"
+  }
+]
