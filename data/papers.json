@@ -1,5 +1,6 @@
 [
   {
+    "category": "model",
     "title": "Emerging Properties in Unified Multimodal Pretraining",
     "acceptance": "arXiv preprint, 2025",
     "github": "ByteDance-Seed/Bagel",
@@ -12,6 +13,7 @@
     "affiliations": "ByteDance Seed, Shenzhen Institutes of Advanced Technology, Monash University, HKUST, UC Santa Cruz"
   },
   {
+    "category": "model",
     "title": "Emu3: Next-Token Prediction is All You Need",
     "acceptance": "Nature 2026",
     "github": "baaivision/Emu3",
@@ -26,6 +28,7 @@
     "affiliations": "BAAI"
   },
   {
+    "category": "model",
     "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
     "acceptance": "arXiv preprint, 2026",
     "github": "tulerfeng/Gen-Searcher",
@@ -38,6 +41,7 @@
     "affiliations": "MMLab, CUHK, UCLA, UC Berkeley"
   },
   {
+    "category": "model",
     "title": "Lance: Unified Multimodal Modeling by Multi-Task Synergy",
     "acceptance": "arXiv preprint, 2026",
     "github": "bytedance/Lance",
@@ -50,6 +54,7 @@
     "affiliations": "Intelligent Creation Lab, ByteDance"
   },
   {
+    "category": "model",
     "title": "LongCat-Next: Lexicalizing Modalities as Discrete Tokens",
     "acceptance": "arXiv preprint, 2026",
     "github": "meituan-longcat/LongCat-Next",
@@ -62,6 +67,7 @@
     "affiliations": "Meituan"
   },
   {
+    "category": "model",
     "title": "Unify-Agent: A Unified Multimodal Agent for World-Grounded Image Synthesis",
     "acceptance": "arXiv preprint, 2026",
     "github": "shawn0728/Unify-Agent",
@@ -74,6 +80,7 @@
     "affiliations": "UCLA, Tencent Hunyuan, CUHK, HKUST"
   },
   {
+    "category": "benchmark",
     "title": "Watching, Reasoning and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning",
     "acceptance": "arXiv preprint, 2026",
     "github": "QuantaAlpha/VideoDR-Benchmark",
@@ -84,5 +91,33 @@
     "citation_checked": "2026-05-20",
     "authors": "Chengwen Liu, Xiaomin Yu, Zhuoyue Chang, Zhe Huang, Shuo Zhang, Heng Lian, Kunyi Wang, Rui Xu, Sen Hu, Jianheng Hou, Hao Peng, Chengwei Qin, Xiaobin Hu, Hong Peng, Ronghao Chen, Huacan Wang",
     "affiliations": "LZU, HKUST(GZ), UBC, FDU, PKU, USC, NUS, UCAS, HKUST, QuantaAlpha"
+  },
+  {
+    "category": "benchmark",
+    "title": "MME-Unify: A Comprehensive Benchmark for Unified Multimodal Understanding and Generation Models",
+    "acceptance": "ICLR 2026",
+    "github": "MME-Benchmarks/MME-Unify",
+    "arxiv": "2504.03641",
+    "paper_url": "https://arxiv.org/abs/2504.03641",
+    "publication_url": "https://openreview.net/forum?id=7x6TxVIarj",
+    "publication_note": "OpenReview: ICLR 2026 Poster",
+    "citations": 24,
+    "citation_source": "Google Scholar",
+    "citation_checked": "2026-05-20",
+    "authors": "Wulin Xie, Yi-Fan Zhang, Chaoyou Fu, Yang Shi, Bingyan Nie, Hongkai Chen, Zhang Zhang, Liang Wang, Tieniu Tan",
+    "affiliations": "CASIA, NJU, PKU, Vivo, M-M-E"
+  },
+  {
+    "category": "benchmark",
+    "title": "Uni-MMMU: A Massive Multi-discipline Multimodal Unified Benchmark",
+    "acceptance": "arXiv preprint, 2025",
+    "github": "Vchitect/Uni-MMMU",
+    "arxiv": "2510.13759",
+    "paper_url": "https://arxiv.org/abs/2510.13759",
+    "citations": 16,
+    "citation_source": "Google Scholar",
+    "citation_checked": "2026-05-20",
+    "authors": "Kai Zou, Ziqi Huang, Yuhao Dong, Shulin Tian, Dian Zheng, Hongbo Liu, Jingwen He, Bin Liu, Yu Qiao, Ziwei Liu",
+    "affiliations": "Shanghai Artificial Intelligence Laboratory, S-Lab at NTU, USTC, CUHK"
   }
 ]

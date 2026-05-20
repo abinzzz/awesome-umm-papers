@@ -4,7 +4,7 @@ A curated list of papers on unified multimodal models, agents, and native multim
 
 GitHub stars are live Shields.io badges. Citation counts are Google Scholar counts checked manually; they are not mixed with Semantic Scholar or OpenAlex counts because those sources use different coverage and can mismatch newly released arXiv papers.
 
-## Papers
+## Models
 
 **Title:** Emerging Properties in Unified Multimodal Pretraining  
 **Acceptance:** arXiv preprint, 2025  
@@ -65,7 +65,8 @@ GitHub stars are live Shields.io badges. Citation counts are Google Scholar coun
 **Authors:** Shawn Chen, Quanxin Shou, Hangting Chen, Yucheng Zhou, Kaituo Feng, Wenbo Hu, Yi-Fan Zhang, Yunlong Lin, Wenxuan Huang, Mingyang Song, Dasen Dai, Bolin Jiang, Manyuan Zhang, Shi-Xue Zhang, Zhengkai Jiang, Lucas Wang, Zhao Zhong, Yu Cheng, Nanyun Peng  
 **Affiliations:** UCLA, Tencent Hunyuan, CUHK, HKUST
 
----
+
+## Benchmarks
 
 **Title:** Watching, Reasoning and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning  
 **Acceptance:** arXiv preprint, 2026  
@@ -74,3 +75,24 @@ GitHub stars are live Shields.io badges. Citation counts are Google Scholar coun
 **Paper:** [arXiv:2601.06943](https://arxiv.org/abs/2601.06943)  
 **Authors:** Chengwen Liu, Xiaomin Yu, Zhuoyue Chang, Zhe Huang, Shuo Zhang, Heng Lian, Kunyi Wang, Rui Xu, Sen Hu, Jianheng Hou, Hao Peng, Chengwei Qin, Xiaobin Hu, Hong Peng, Ronghao Chen, Huacan Wang  
 **Affiliations:** LZU, HKUST(GZ), UBC, FDU, PKU, USC, NUS, UCAS, HKUST, QuantaAlpha
+
+---
+
+**Title:** MME-Unify: A Comprehensive Benchmark for Unified Multimodal Understanding and Generation Models  
+**Acceptance:** ICLR 2026  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/MME-Benchmarks/MME-Unify?style=social) [MME-Benchmarks/MME-Unify](https://github.com/MME-Benchmarks/MME-Unify)  
+**Citations:** [24](https://scholar.google.com/scholar?q=%22MME-Unify%3A%20A%20Comprehensive%20Benchmark%20for%20Unified%20Multimodal%20Understanding%20and%20Generation%20Models%22) (Google Scholar, checked 2026-05-20)  
+**Paper:** [arXiv:2504.03641](https://arxiv.org/abs/2504.03641)  
+**Publication:** [OpenReview: ICLR 2026 Poster](https://openreview.net/forum?id=7x6TxVIarj)  
+**Authors:** Wulin Xie, Yi-Fan Zhang, Chaoyou Fu, Yang Shi, Bingyan Nie, Hongkai Chen, Zhang Zhang, Liang Wang, Tieniu Tan  
+**Affiliations:** CASIA, NJU, PKU, Vivo, M-M-E
+
+---
+
+**Title:** Uni-MMMU: A Massive Multi-discipline Multimodal Unified Benchmark  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Vchitect/Uni-MMMU?style=social) [Vchitect/Uni-MMMU](https://github.com/Vchitect/Uni-MMMU)  
+**Citations:** [16](https://scholar.google.com/scholar?q=%22Uni-MMMU%3A%20A%20Massive%20Multi-discipline%20Multimodal%20Unified%20Benchmark%22) (Google Scholar, checked 2026-05-20)  
+**Paper:** [arXiv:2510.13759](https://arxiv.org/abs/2510.13759)  
+**Authors:** Kai Zou, Ziqi Huang, Yuhao Dong, Shulin Tian, Dian Zheng, Hongbo Liu, Jingwen He, Bin Liu, Yu Qiao, Ziwei Liu  
+**Affiliations:** Shanghai Artificial Intelligence Laboratory, S-Lab at NTU, USTC, CUHK

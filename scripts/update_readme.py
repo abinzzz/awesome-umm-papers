@@ -132,8 +132,27 @@ def render_paper(paper: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def render_readme(papers: list[dict[str, Any]]) -> str:
+def render_section(title: str, papers: list[dict[str, Any]]) -> str:
+    if not papers:
+        return ""
     entries = [render_paper(paper) for paper in papers]
+    return f"## {title}\n\n" + "\n\n---\n\n".join(entries) + "\n"
+
+
+def render_readme(papers: list[dict[str, Any]]) -> str:
+    models = [paper for paper in papers if paper.get("category") == "model"]
+    benchmarks = [paper for paper in papers if paper.get("category") == "benchmark"]
+    uncategorized = [
+        paper
+        for paper in papers
+        if paper.get("category") not in {"model", "benchmark"}
+    ]
+
+    sections = [
+        render_section("Models", models),
+        render_section("Benchmarks", benchmarks),
+        render_section("Other Papers", uncategorized),
+    ]
 
     return (
         "# Awesome UMM Papers\n\n"
@@ -141,9 +160,7 @@ def render_readme(papers: list[dict[str, Any]]) -> str:
         "GitHub stars are live Shields.io badges. Citation counts are Google Scholar counts checked manually; "
         "they are not mixed with Semantic Scholar or OpenAlex counts because those sources use different coverage "
         "and can mismatch newly released arXiv papers.\n\n"
-        "## Papers\n\n"
-        + "\n\n---\n\n".join(entries)
-        + "\n"
+        + "\n\n".join(section for section in sections if section)
     )
 
 
