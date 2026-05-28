@@ -86,9 +86,9 @@ def scholar_link(title: str) -> str:
 
 def paper_link(paper: dict[str, Any]) -> str:
     arxiv_id = paper.get("arxiv")
+    if arxiv_id:
+        return f"[alphaXiv:{arxiv_id}](https://www.alphaxiv.org/abs/{arxiv_id})"
     url = paper.get("paper_url")
-    if arxiv_id and url:
-        return f"[arXiv:{arxiv_id}]({url})"
     if url:
         return f"[Paper]({url})"
     return "TBA"
@@ -110,6 +110,8 @@ def render_paper(paper: dict[str, Any]) -> str:
     citation_text = "0" if citations == 0 else str(citations or "N/A")
     source = paper.get("citation_source", "Google Scholar")
     checked = paper.get("citation_checked", "unchecked")
+    figure_path = paper.get("figure")
+    figure_caption = paper.get("figure_caption")
 
     lines = [
         f"**Title:** {paper['title']}  ",
@@ -123,6 +125,13 @@ def render_paper(paper: dict[str, Any]) -> str:
     if publication:
         lines.append(publication)
 
+    if figure_path:
+        alt_text = figure_caption or f"Figure for {paper['title']}"
+        if figure_caption:
+            lines.append(f"**Figure:** {figure_caption}  ")
+        lines.append(f"![{alt_text}]({figure_path})")
+        lines.append("")
+
     lines.extend(
         [
             f"**Authors:** {paper['authors']}  ",
@@ -130,13 +139,6 @@ def render_paper(paper: dict[str, Any]) -> str:
         ]
     )
     return "\n".join(lines)
-
-
-def render_section(title: str, papers: list[dict[str, Any]]) -> str:
-    if not papers:
-        return ""
-    entries = [render_paper(paper) for paper in papers]
-    return f"## {title}\n\n" + "\n\n---\n\n".join(entries) + "\n"
 
 
 def render_readme(papers: list[dict[str, Any]]) -> str:
@@ -147,12 +149,8 @@ def render_readme(papers: list[dict[str, Any]]) -> str:
         for paper in papers
         if paper.get("category") not in {"model", "benchmark"}
     ]
-
-    sections = [
-        render_section("Models", models),
-        render_section("Benchmarks", benchmarks),
-        render_section("Other Papers", uncategorized),
-    ]
+    ordered_papers = models + benchmarks + uncategorized
+    entries = [render_paper(paper) for paper in ordered_papers]
 
     return (
         "# Awesome UMM Papers\n\n"
@@ -160,7 +158,8 @@ def render_readme(papers: list[dict[str, Any]]) -> str:
         "GitHub stars are live Shields.io badges. Citation counts are Google Scholar counts checked manually; "
         "they are not mixed with Semantic Scholar or OpenAlex counts because those sources use different coverage "
         "and can mismatch newly released arXiv papers.\n\n"
-        + "\n\n".join(section for section in sections if section)
+        + "\n\n---\n\n".join(entries)
+        + "\n"
     )
 
 
