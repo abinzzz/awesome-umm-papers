@@ -105,7 +105,7 @@ def publication_link(paper: dict[str, Any]) -> str | None:
 
 
 def render_paper(paper: dict[str, Any]) -> str:
-    repo = paper["github"]
+    repo = paper.get("github")
     citations = paper.get("citations")
     citation_text = "0" if citations == 0 else str(citations or "N/A")
     source = paper.get("citation_source", "Google Scholar")
@@ -117,10 +117,15 @@ def render_paper(paper: dict[str, Any]) -> str:
     lines = [
         f"**Title:** {paper['title']}  ",
         f"**Acceptance:** {paper['acceptance']}  ",
-        f"**GitHub:** {github_stars_badge(repo)} [{repo}](https://github.com/{repo})  ",
         f"**Citations:** [{citation_text}]({scholar_link(paper['title'])}) ({citation_meta})  ",
         f"**Paper:** {paper_link(paper)}  ",
     ]
+
+    if repo:
+        lines.insert(
+            2,
+            f"**GitHub:** {github_stars_badge(repo)} [{repo}](https://github.com/{repo})  ",
+        )
 
     publication = publication_link(paper)
     if publication:

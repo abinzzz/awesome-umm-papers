@@ -123,6 +123,101 @@ GitHub stars are live Shields.io badges. Citation counts are Google Scholar coun
 
 ---
 
+**Title:** Video-Browser: Towards Agentic Open-web Video Browsing  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/chrisx599/Video-Browser?style=social) [chrisx599/Video-Browser](https://github.com/chrisx599/Video-Browser)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22Video-Browser%3A%20Towards%20Agentic%20Open-web%20Video%20Browsing%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2512.23044](https://www.alphaxiv.org/abs/2512.23044)  
+**Publication:** [Dataset: Video-BrowseComp](https://huggingface.co/datasets/chr1ce/Video-Browsecomp)  
+**Authors:** Zhengyang Liang, Yan Shu, Xiangrui Liu, Minghao Qin, Kaixin Liang, Nicu Sebe, Zheng Liu, Lizi Liao  
+**Affiliations:** Multiple institutions
+
+---
+
+**Title:** OK-VQA: A Visual Question Answering Benchmark Requiring External Knowledge  
+**Acceptance:** CVPR 2019  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22OK-VQA%3A%20A%20Visual%20Question%20Answering%20Benchmark%20Requiring%20External%20Knowledge%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:1906.00067](https://www.alphaxiv.org/abs/1906.00067)  
+**Publication:** [Project page](https://okvqa.allenai.org/)  
+**Authors:** Kenneth Marino, Mohammad Rastegari, Ali Farhadi, Roozbeh Mottaghi  
+**Affiliations:** Carnegie Mellon University, Allen Institute for Artificial Intelligence
+
+---
+
+**Title:** A-OKVQA: A Benchmark for Visual Question Answering using World Knowledge  
+**Acceptance:** ECCV 2022  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/allenai/aokvqa?style=social) [allenai/aokvqa](https://github.com/allenai/aokvqa)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22A-OKVQA%3A%20A%20Benchmark%20for%20Visual%20Question%20Answering%20using%20World%20Knowledge%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2206.01718](https://www.alphaxiv.org/abs/2206.01718)  
+**Publication:** [Project page](https://a-okvqa.allenai.org/)  
+**Authors:** Dustin Schwenk, Apoorv Khandelwal, Christopher Clark, Kenneth Marino, Roozbeh Mottaghi  
+**Affiliations:** Allen Institute for Artificial Intelligence
+
+---
+
+**Title:** WebQA: Multihop and Multimodal QA  
+**Acceptance:** CVPR 2022  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebQA%3A%20Multihop%20and%20Multimodal%20QA%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2109.00590](https://www.alphaxiv.org/abs/2109.00590)  
+**Publication:** [Project page](https://webqna.github.io/)  
+**Authors:** Yingshan Chang, Mridu Narang, Hisami Suzuki, Guihong Cao, Jianfeng Gao, Yonatan Bisk  
+**Affiliations:** Carnegie Mellon University, Microsoft Research
+
+---
+
+**Title:** MultiModalQA: Complex Question Answering over Text, Tables and Images  
+**Acceptance:** ICLR 2021  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/allenai/multimodalqa?style=social) [allenai/multimodalqa](https://github.com/allenai/multimodalqa)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22MultiModalQA%3A%20Complex%20Question%20Answering%20over%20Text%2C%20Tables%20and%20Images%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2104.06039](https://www.alphaxiv.org/abs/2104.06039)  
+**Publication:** [Project page](https://allenai.github.io/multimodalqa/)  
+**Authors:** Alon Talmor, Ori Yoran, Amnon Catav, Dan Lahav, Yizhong Wang, Akari Asai, Gabriel Ilharco, Hannaneh Hajishirzi, Jonathan Berant  
+**Affiliations:** Allen Institute for Artificial Intelligence, Tel Aviv University, University of Washington
+
+---
+
+**Title:** BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/openai/simple-evals?style=social) [openai/simple-evals](https://github.com/openai/simple-evals)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22BrowseComp%3A%20A%20Simple%20Yet%20Challenging%20Benchmark%20for%20Browsing%20Agents%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2504.12516](https://www.alphaxiv.org/abs/2504.12516)  
+**Publication:** [OpenAI release page](https://openai.com/index/browsecomp/)  
+**Authors:** Jason Wei, Zhiqing Sun, Spencer Papay, Scott McKinney, Jeffrey Han, Isa Fulford, Hyung Won Chung, Alex Tachard Passos, William Fedus, Amelia Glaese  
+**Affiliations:** OpenAI
+
+---
+
+**Title:** DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Ayanami0730/deep_research_bench?style=social) [Ayanami0730/deep_research_bench](https://github.com/Ayanami0730/deep_research_bench)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22DeepResearch%20Bench%3A%20A%20Comprehensive%20Benchmark%20for%20Deep%20Research%20Agents%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2506.11763](https://www.alphaxiv.org/abs/2506.11763)  
+**Publication:** [Project page](https://deepresearch-bench.github.io/)  
+**Authors:** Mingxuan Du, Benfeng Xu, Chiwei Zhu, Xiaorui Wang, Zhendong Mao  
+**Affiliations:** University of Science and Technology of China, Metastone Technology
+
+---
+
+**Title:** DeepSearchQA: Bridging the Comprehensiveness Gap for Deep Research Agents  
+**Acceptance:** arXiv preprint, 2026  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22DeepSearchQA%3A%20Bridging%20the%20Comprehensiveness%20Gap%20for%20Deep%20Research%20Agents%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2601.20975](https://www.alphaxiv.org/abs/2601.20975)  
+**Publication:** [Dataset: Kaggle](https://www.kaggle.com/datasets/deepmind/deepsearchqa)  
+**Authors:** Nikita Gupta, Riju Chatterjee, Lukas Haas, Connie Tao, Andrew Wang, Chang Liu, Hidekazu Oiwa, Elena Gribovskaya, Jan Ackermann, John Blitzer, Sasha Goldshtein, Dipanjan Das  
+**Affiliations:** Google DeepMind
+
+---
+
+**Title:** MMDeepResearch-Bench: A Benchmark for Multimodal Deep Research Agents  
+**Acceptance:** arXiv preprint, 2026  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22MMDeepResearch-Bench%3A%20A%20Benchmark%20for%20Multimodal%20Deep%20Research%20Agents%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2601.12346](https://www.alphaxiv.org/abs/2601.12346)  
+**Publication:** [Dataset: MMDR-Bench](https://huggingface.co/datasets/anomyousMMDR/MMdeepresearch)  
+**Authors:** Peizhou Huang, Zixuan Zhong, Zhongwei Wan, Donghao Zhou, Samiul Alam, Xin Wang, Zexin Li, Zhihao Dou, Li Zhu, Jing Xiong, Chaofan Tao, Yan Xu, Dimitrios Dimitriadis, Tuo Zhang, Mi Zhang  
+**Affiliations:** Multiple institutions
+
+---
+
 **Title:** WebWalker: Benchmarking LLMs in Web Traversal  
 **Acceptance:** ACL 2025  
 **GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
