@@ -120,3 +120,186 @@ GitHub stars are live Shields.io badges. Citation counts are Google Scholar coun
 
 **Authors:** Kai Zou, Ziqi Huang, Yuhao Dong, Shulin Tian, Dian Zheng, Hongbo Liu, Jingwen He, Bin Liu, Yu Qiao, Ziwei Liu  
 **Affiliations:** Shanghai Artificial Intelligence Laboratory, S-Lab at NTU, USTC, CUHK
+
+---
+
+**Title:** WebWalker: Benchmarking LLMs in Web Traversal  
+**Acceptance:** ACL 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebWalker%3A%20Benchmarking%20LLMs%20in%20Web%20Traversal%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2501.07572](https://www.alphaxiv.org/abs/2501.07572)  
+**Publication:** [ACL Anthology: ACL 2025 Long Paper](https://aclanthology.org/2025.acl-long.508/)  
+**Authors:** Jialong Wu, Wenbiao Yin, Yong Jiang, Zhenglin Wang, Zekun Xi, Runnan Fang, Linhai Zhang, Yulan He, Deyu Zhou, Pengjun Xie, Fei Huang  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** WebDancer: Towards Autonomous Information Seeking Agency  
+**Acceptance:** NeurIPS 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebDancer%3A%20Towards%20Autonomous%20Information%20Seeking%20Agency%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2505.22648](https://www.alphaxiv.org/abs/2505.22648)  
+**Publication:** [OpenReview paper page](https://openreview.net/pdf?id=quJdphBcdP)  
+**Authors:** Jialong Wu, Baixuan Li, Runnan Fang, Wenbiao Yin, Liwen Zhang, Zhengwei Tao, Dingchu Zhang, Zekun Xi, Gang Fu, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** WebSailor: Navigating Super-human Reasoning for Web Agent  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebSailor%3A%20Navigating%20Super-human%20Reasoning%20for%20Web%20Agent%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2507.02592](https://www.alphaxiv.org/abs/2507.02592)  
+**Authors:** Kuan Li, Zhongwang Zhang, Huifeng Yin, Liwen Zhang, Litu Ou, Jialong Wu, Wenbiao Yin, Baixuan Li, Zhengwei Tao, Xinyu Wang, Weizhou Shen, Junkai Zhang, Dingchu Zhang, Xixi Wu, Yong Jiang, Ming Yan, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** WebShaper: Agentically Data Synthesizing via Information-Seeking Formalization  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebShaper%3A%20Agentically%20Data%20Synthesizing%20via%20Information-Seeking%20Formalization%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2507.15061](https://www.alphaxiv.org/abs/2507.15061)  
+**Authors:** Zhengwei Tao, Jialong Wu, Wenbiao Yin, Junkai Zhang, Baixuan Li, Haiyang Shen, Kuan Li, Liwen Zhang, Xinyu Wang, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** WebWatcher: Breaking New Frontier of Vision-Language Deep Research Agent  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebWatcher%3A%20Breaking%20New%20Frontier%20of%20Vision-Language%20Deep%20Research%20Agent%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2508.05748](https://www.alphaxiv.org/abs/2508.05748)  
+**Authors:** Xinyu Geng, Peng Xia, Zhen Zhang, Xinyu Wang, Qiuchen Wang, Ruixue Ding, Chenxi Wang, Jialong Wu, Yida Zhao, Kuan Li, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** WebResearcher: Unleashing unbounded reasoning capability in Long-Horizon Agents  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebResearcher%3A%20Unleashing%20unbounded%20reasoning%20capability%20in%20Long-Horizon%20Agents%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2509.13309](https://www.alphaxiv.org/abs/2509.13309)  
+**Authors:** Zile Qiao, Guoxin Chen, Xuanzhong Chen, Donglei Yu, Wenbiao Yin, Xinyu Wang, Zhen Zhang, Baixuan Li, Huifeng Yin, Kuan Li, Rui Min, Minpeng Liao, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22ReSum%3A%20Unlocking%20Long-Horizon%20Search%20Intelligence%20via%20Context%20Summarization%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2509.13313](https://www.alphaxiv.org/abs/2509.13313)  
+**Authors:** Xixi Wu, Kuan Li, Yida Zhao, Liwen Zhang, Litu Ou, Huifeng Yin, Zhongwang Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Minhao Cheng, Shuai Wang, Hong Cheng, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic Data and Scalable Reinforcement Learning  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebSailor-V2%3A%20Bridging%20the%20Chasm%20to%20Proprietary%20Agents%20via%20Synthetic%20Data%20and%20Scalable%20Reinforcement%20Learning%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2509.13305](https://www.alphaxiv.org/abs/2509.13305)  
+**Authors:** Kuan Li, Zhongwang Zhang, Huifeng Yin, Rui Ye, Yida Zhao, Liwen Zhang, Litu Ou, Dingchu Zhang, Xixi Wu, Jialong Wu, Xinyu Wang, Zile Qiao, Zhen Zhang, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** Scaling Agents via Continual Pre-training  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22Scaling%20Agents%20via%20Continual%20Pre-training%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2509.13310](https://www.alphaxiv.org/abs/2509.13310)  
+**Authors:** Liangcai Su, Zhen Zhang, Guangyu Li, Zhuo Chen, Chenxi Wang, Maojia Song, Xinyu Wang, Kuan Li, Jialong Wu, Xuanzhong Chen, Zile Qiao, Zhongwang Zhang, Huifeng Yin, Shihao Cai, Runnan Fang, Zhengwei Tao, Wenbiao Yin, Chenxiong Qian, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** Towards General Agentic Intelligence via Environment Scaling  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22Towards%20General%20Agentic%20Intelligence%20via%20Environment%20Scaling%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2509.13311](https://www.alphaxiv.org/abs/2509.13311)  
+**Authors:** Runnan Fang, Shihao Cai, Baixuan Li, Jialong Wu, Guangyu Li, Wenbiao Yin, Xinyu Wang, Xiaobin Wang, Liangcai Su, Zhen Zhang, Shibin Wu, Zhengwei Tao, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** AgentFold: Long-Horizon Web Agents with Proactive Context Management  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22AgentFold%3A%20Long-Horizon%20Web%20Agents%20with%20Proactive%20Context%20Management%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2510.24699](https://www.alphaxiv.org/abs/2510.24699)  
+**Authors:** Rui Ye, Zhongwang Zhang, Kuan Li, Huifeng Yin, Zhengwei Tao, Yida Zhao, Liangcai Su, Liwen Zhang, Zile Qiao, Xinyu Wang, Pengjun Xie, Fei Huang, Siheng Chen, Jingren Zhou, Yong Jiang  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** WebLeaper: Empowering Efficiency and Efficacy in WebAgent via Enabling Info-Rich Seeking  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22WebLeaper%3A%20Empowering%20Efficiency%20and%20Efficacy%20in%20WebAgent%20via%20Enabling%20Info-Rich%20Seeking%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2510.24697](https://www.alphaxiv.org/abs/2510.24697)  
+**Authors:** Zhengwei Tao, Haiyang Shen, Baixuan Li, Wenbiao Yin, Jialong Wu, Kuan Li, Zhongwang Zhang, Huifeng Yin, Rui Ye, Liwen Zhang, Xinyu Wang, Pengjun Xie, Jingren Zhou, Yong Jiang  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22BrowseConf%3A%20Confidence-Guided%20Test-Time%20Scaling%20for%20Web%20Agents%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2510.23458](https://www.alphaxiv.org/abs/2510.23458)  
+**Authors:** Litu Ou, Kuan Li, Huifeng Yin, Liwen Zhang, Zhongwang Zhang, Xixi Wu, Rui Ye, Zile Qiao, Yong Jiang, Pengjun Xie, Fei Huang, Jingren Zhou  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** Repurposing Synthetic Data for Fine-grained Search Agent Supervision  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22Repurposing%20Synthetic%20Data%20for%20Fine-grained%20Search%20Agent%20Supervision%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2510.24694](https://www.alphaxiv.org/abs/2510.24694)  
+**Authors:** Yida Zhao, Kuan Li, Xixi Wu, Liwen Zhang, Dingchu Zhang, Baixuan Li, Maojia Song, Zhuo Chen, Chenxi Wang, Xinyu Wang, Kewei Tu, Pengjun Xie, Jingren Zhou, Yong Jiang  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** ParallelMuse: Agentic Parallel Thinking for Deep Information Seeking  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22ParallelMuse%3A%20Agentic%20Parallel%20Thinking%20for%20Deep%20Information%20Seeking%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2510.24698](https://www.alphaxiv.org/abs/2510.24698)  
+**Authors:** Baixuan Li, Dingchu Zhang, Jialong Wu, Wenbiao Yin, Zhengwei Tao, Yida Zhao, Liwen Zhang, Haiyang Shen, Runnan Fang, Pengjun Xie, Jingren Zhou, Yong Jiang  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** AgentFrontier: Expanding the Capability Frontier of LLM Agents with ZPD-Guided Data Synthesis  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22AgentFrontier%3A%20Expanding%20the%20Capability%20Frontier%20of%20LLM%20Agents%20with%20ZPD-Guided%20Data%20Synthesis%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2510.24695](https://www.alphaxiv.org/abs/2510.24695)  
+**Authors:** Xuanzhong Chen, Zile Qiao, Guoxin Chen, Liangcai Su, Zhen Zhang, Xinyu Wang, Pengjun Xie, Fei Huang, Jingren Zhou, Yong Jiang  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** Nested Browser-Use Learning for Agentic Information Seeking  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/Alibaba-NLP/WebAgent?style=social) [Alibaba-NLP/WebAgent](https://github.com/Alibaba-NLP/WebAgent)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22Nested%20Browser-Use%20Learning%20for%20Agentic%20Information%20Seeking%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2512.23647](https://www.alphaxiv.org/abs/2512.23647)  
+**Authors:** Baixuan Li, Jialong Wu, Wenbiao Yin, Kuan Li, Zhongwang Zhang, Huifeng Yin, Zhengwei Tao, Liwen Zhang, Pengjun Xie, Jingren Zhou, Yong Jiang  
+**Affiliations:** Tongyi Lab, Alibaba Group
+
+---
+
+**Title:** Deep Research: A Systematic Survey  
+**Acceptance:** arXiv preprint, 2025  
+**GitHub:** ![GitHub stars](https://img.shields.io/github/stars/mangopy/Deep-Research-Survey?style=social) [mangopy/Deep-Research-Survey](https://github.com/mangopy/Deep-Research-Survey)  
+**Citations:** [N/A](https://scholar.google.com/scholar?q=%22Deep%20Research%3A%20A%20Systematic%20Survey%22) (Google Scholar, unchecked)  
+**Paper:** [alphaXiv:2512.02038](https://www.alphaxiv.org/abs/2512.02038)  
+**Publication:** [Project page](https://deep-research-survey.github.io/)  
+**Authors:** Zhengliang Shi, Yiqun Chen, Haitao Li, Weiwei Sun, Shiyu Ni, Yougang Lyu, Run-Ze Fan, Bowen Jin, Yixuan Weng, Minjun Zhu, Qiujie Xie, Xinyu Guo, Qu Yang, Jiayi Wu, Jujia Zhao, Xiaqiang Tang, Xinbei Ma, Cunxiang Wang, Jiaxin Mao, Qingyao Ai, Jen-Tse Huang, Wenxuan Wang, Yue Zhang, Yiming Yang, Zhaopeng Tu, Zhaochun Ren  
+**Affiliations:** Multiple institutions

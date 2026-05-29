@@ -110,6 +110,7 @@ def render_paper(paper: dict[str, Any]) -> str:
     citation_text = "0" if citations == 0 else str(citations or "N/A")
     source = paper.get("citation_source", "Google Scholar")
     checked = paper.get("citation_checked", "unchecked")
+    citation_meta = f"{source}, checked {checked}" if checked != "unchecked" else f"{source}, unchecked"
     figure_path = paper.get("figure")
     figure_caption = paper.get("figure_caption")
 
@@ -117,7 +118,7 @@ def render_paper(paper: dict[str, Any]) -> str:
         f"**Title:** {paper['title']}  ",
         f"**Acceptance:** {paper['acceptance']}  ",
         f"**GitHub:** {github_stars_badge(repo)} [{repo}](https://github.com/{repo})  ",
-        f"**Citations:** [{citation_text}]({scholar_link(paper['title'])}) ({source}, checked {checked})  ",
+        f"**Citations:** [{citation_text}]({scholar_link(paper['title'])}) ({citation_meta})  ",
         f"**Paper:** {paper_link(paper)}  ",
     ]
 
